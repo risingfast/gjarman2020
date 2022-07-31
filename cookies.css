@@ -1,0 +1,23 @@
+/* cookies.css - a css for cookies.html                                                                              */
+/* started - 05-Jul-2022                                                                                             */
+/* References:                                                                                                       */
+/*         https://www.youtube.com/watch?v=j0PpT96EFeg                                                               */
+/* Log                                                                                                               */
+/*     05-Jul-2022 - started                                                                                         */
+
+#cookiebuttons-div {
+    width:80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    max-width:800px;
+    text-align:center;
+}
+
+#showcookie-div {
+    width:80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align:center;
+}

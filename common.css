@@ -1,0 +1,263 @@
+/* common.css - common stylesheet for all webpages following the grid layout                                         */
+/* started    - 18-May-2022                                                                                          */
+/* References:                                                                                                       */
+/*    https://www.youtube.com/watch?v=qTGbWfEEnKI                                                                    */
+/*         Easily Structure your Layout with CSS Grid's 'grid-template-areas'                                        */
+/* Templates:                                                                                                        */
+/*     d_templateGrid1.css                                                                                           */
+/* Log:                                                                                                              */
+/*    11-Sep-2021 - start                                                                                            */
+/*    20-Jul-2022 - add styling for session block                                                                    */
+/*    22-Jul-2022 - add styling for secured and unsecured divs                                                       */
+
+BODY {
+    margin: 0px;
+    font-family:"Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif";
+}
+
+A {
+    color: olive;
+}
+
+#WRAPPER1 {
+    margin: auto;
+    max-width: 1440px;
+}
+
+#WRAPPER2 {
+    display: grid;
+    grid-template-areas:
+        "HeaderArea HeaderArea HeaderArea"
+        "NavArea    MainArea   SmallAsideArea"
+        "NavArea    MainArea   SmallAsideCaption"
+        "NavArea    MainArea   LargeAsideArea"
+        "SsnArea    MainArea   LargeAsideArea"
+        "FooterArea FooterArea FooterArea";
+    grid-template-rows: 100px 250px 50px 1fr 170px 100px;
+    grid-template-columns: 200px 1fr 250px;
+    grid-row-gap: 0px;
+    margin: 0;
+    height: 100vh;
+}
+
+#HEADER1 {
+    grid-area: HeaderArea;
+    background-color: #bdf5bd;
+}
+
+#SESSION1 {
+    grid-area: SsnArea;
+    color: olive;
+    background-color: lightgrey;
+}
+
+#NAV1 {
+    grid-area: NavArea;
+    background-color: lightgrey;
+    overflow: auto;
+}
+
+#MAIN1 {
+    grid-area: MainArea;
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: olive;
+    background-color: #e6e6e6;
+    overflow: auto;
+
+}
+
+#ASIDE1 {
+    grid-area: LargeAsideArea;
+    background-color: lightgrey;
+    font-size: 1rem;
+    padding: 0;
+    overflow: auto;
+}
+
+#ASIDE2 {
+    grid-area: SmallAsideArea;
+    background-color: #ffcc99;
+}
+
+#ASIDE3 {
+    grid-area: SmallAsideCaption;
+    background-color: lightgrey;
+    font-size: 0.875rem;
+    color: olive;
+}
+
+#ASIDE3 p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+#ASIDE2IMG {
+    width: 250px;
+    height: 250px;
+}
+
+#FOOTER1 {
+    grid-area: FooterArea;
+    background-color: #bdf5bd;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #WRAPPER2 {
+        display: grid;
+        grid-template-areas:
+            "HeaderArea"
+            "NavArea"
+            "MainArea"
+            "LargeAsideArea"
+            "FooterArea";
+        grid-template-rows: 100px 100px 1fr 100px 50px;
+        grid-template-columns: 100%;
+        grid-row-gap: 0px;
+        margin: 0;
+        height: 100vh;
+    }
+
+    #ASIDE2IMG {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+#HEADER1DIV {
+    margin: auto;
+    text-align: center;
+    color: olive;
+}
+
+#FOOTER1DIV {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: olive;
+}
+
+#FOOTER1OPTIONS-DIV {
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    color: olive;
+}
+
+#NAV1H3 {
+    color: olive;
+    margin-left: 25px;
+}
+
+#SESSION1H3 {
+    color: olive;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+#SESSION1PARA {
+    color: olive;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#NAV1UL {
+   color: olive;
+   padding-left: 25px;
+   text-decoration: none;
+}
+
+.NAV1LI {
+    color: olive;
+}
+
+#ASIDE1UL {
+   font-size:0.875em;
+   color: olive;
+   padding-left: 25px;
+   text-decoration: none;
+   margin-top: 5px;
+}
+
+#ASIDE1H3 {
+    color: olive;
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ASIDE1LI {
+    color: olive;
+}
+
+#SUBMITDIV {
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#MOREBTTNS {
+    width: 80%;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#HELP {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+#HELPTXT {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+#HELPDIV {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    display: none;
+}
+
+#INTERNALS {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 800px;
+}
+
+#INTERNALS summary {
+    outline: none;
+}
+
+#INTERNALS p {
+    padding-left: 0px;
+}
+
+#unsecured-div {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    text-align: center;
+    display: block;
+}
+
+#secured-div {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    text-align: center;
+    display: none
+}

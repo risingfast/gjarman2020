@@ -1,0 +1,48 @@
+/* index.css -  stylesheet for index1.html which includes a grid layout                                              */
+/* References:                                                                                                       */
+/*    https://www.youtube.com/watch?v=qTGbWfEEnKI                                                                    */
+/*         Easily Structure your Layout with CSS Grid's 'grid-template-areas'                                        */
+/* Templates:                                                                                                        */
+/*     d_templateGrid1.css                                                                                           */
+/* Log:                                                                                                              */
+/*    11-Sep-2021 - start                                                                                            */
+/*    13-Sep-2021 - add Segoe UI font family to BODY                                                                 */
+/*    13-Sep-2021 - add backgroundd image to main area                                                               */
+/*    16-Sep-2021 - quoted font family name to pass validation                                                       */
+/*    16-Sep-2021 - change media-query for narrow display                                                            */
+/*    18-Sep-2021 - add img resize in media query                                                                    */
+/*    18-Sep-2021 - margin change on sidebars                                                                        */
+/*    09-May-2022 - add smallasideCaption                                                                            */
+/*    10-May-2022 - add styles from index.html                                                                       */
+/*    18-May-2022 - move all css to common.css                                                                                                                   */
+
+#heading-div {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#projectslist-div {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+#gameslist-div {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+#utilitieslist-div {
+    width: 80%;
+    margin: auto;
+    max-width:800px;
+}
+
+#sandboxlist-div {
+    width: 80%; 
+    margin: auto;
+    max-width: 800px;
+}

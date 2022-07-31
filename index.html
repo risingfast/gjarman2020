@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Main index to risingfast website">
+    <meta name="keywords" content="html, css, cgi">
+    <meta name="generator" content="vim">
+    <meta name="author" content="risingfast">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="shortcut icon" href="letterRF.png" type="image/png">
+</head>
+
+<!-- Comments region .............................................................................................. -->
+<!--                                                                                                                -->
+<!-- index.html -  main index page layout using grid areas                                                          -->
+<!-- References:                                                                                                    -->
+<!--      https://www.youtube.com/watch?v=qTGbWfEEnKI                                                               -->
+<!--          Easily Structure your Layout with CSS Grid's 'grid-template-areas'                                    -->
+<!-- Templates                                                                                                      -->
+<!--    d_templateGrid1.html                                                                                        -->
+<!-- Log:                                                                                                           -->
+<!--    11-Sep-2021 - start                                                                                         -->
+<!--    12-Sep-2021 - add image to small aside and fill main                                                        -->
+<!--    13-Sep-2021 - change corner image                                                                           -->
+<!--    13-Sep-2021 - reorder contents                                                                              -->
+<!--    17-Sep-2021 - validate HTML and correct issues                                                              -->
+<!--    18-Sep-2021 - change image size on media query                                                              -->
+<!--    18-Sep-2021 - change Cook to Cook-Jarman ancestry                                                           -->
+<!--    18-Sep-2021 - layout change in main region                                                                  -->
+<!--    19-Sep-2021 - add internals                                                                                 -->
+<!--    19-Sep-2021 - add help button                                                                               -->
+<!--    19-Sep-2021 - add environment utility link                                                                  -->
+<!--    19-Sep-2021 - remove old environment links                                                                  -->
+<!--    19-Sep-2021 - move server profile to Utilities section and replace with grid layout code reference          -->
+<!--    23-Sep-2021 - add anchor for new multiplier                                                                 -->
+<!--    29-Sep-2021 - move simplest from cgi to html and grid                                                       -->
+<!--    30-Sep-2021 - move helloWorld from cgi to html and grid                                                     -->
+<!--    30-Sep-2021 - move tcount from cgi to html and grid                                                         -->
+<!--    01-Oct-2021 - add a mail link in Drills                                                                     -->
+<!--    14-Oct-2021 - add cheat sheets link to utilities                                                            -->
+<!--    01-Nov-2021 - add bookInquiry link to menu                                                                  -->
+<!--    03-Jan-2022 - removed Book Updates                                                                          -->
+<!--    15-Jan-2022 - move old book links to drills                                                                 -->
+<!--    02-May-2022 - add working items                                                                             -->
+<!--    09-May-2022 - add <ASIDE3> for corner image caption                                                         -->
+<!--    10-May-2022 - remove old library pages                                                                      -->
+<!--    10-May-2022 - move all styles to CSS                                                                        -->
+<!--    13-May-2022 - change drills to sandbox                                                                      -->
+<!--    13-May-2022 - streamline games entries                                                                      -->
+<!--    13-May-2022 - add about as a project entry                                                                  -->
+<!--    13-May-2022 - remove <br> ahead of internals div                                                            -->
+<!--    14-May-2022 - change Cook-Jarman Ancestry to Ancestry                                                       -->
+<!--    15-May-2022 - replace index.js with common.js                                                               -->
+<!--    16-May-2022 - change subtitle                                                                               -->
+<!--    16-May-2022 - change background image                                                                       -->
+<!--    16-May-2022 - add and extend clear button                                                                   -->
+<!--    18-May-2022 - add common.css                                                                                -->
+<!--    22-May-2022 - lowercase html tags                                                                           -->
+<!--    31-May-2022 - add cornerimage rotation                                                                      -->
+<!--    18-Jun-2022 - add options in utilities                                                                      -->
+<!--    23-Jun-2022 - add options to footer                                                                         -->
+<!--    02-Jul-2022 - add dogAPI                                                                                    -->
+<!--    15-Jul-2022 - add perlTest.html to the sandbox                                                              -->
+<!--    16-Jul-2022 - add add cookies to perl test                                                                  -->
+<!--    16-Jul-2022 - move Authenticate to utilities section                                                        -->
+<!--    22-Jul-2022 - add Authenticate link                                                                         -->
+<!--    19-Jul-2022 - add session div and authentication link                                                       -->
+<!--                                                                                                                -->
+<!-- <BODY> region for all content including header and footer .................................................... -->
+
+<body onload="fcSetCornerImage(), fcSetFooterOptions(), fcCheckAthentication()">
+    <div id="WRAPPER1">
+        <div id="WRAPPER2">
+            <header id="HEADER1">
+                <br>
+                <div id="HEADER1DIV">
+                     <H2>www.Risingfast.com</H2>
+                </div>
+            </header>
+            <nav ID="NAV1">
+                    <h3 id="NAV1H3">Links</h3>
+                <ul ID="NAV1UL">
+                    <li class="NAV1LI"><a class="active" href="http://www.risingfast.com">Home</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_ajaxFetch.html">Latest</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_template.html">Template</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/email.html">Email</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/about.html">About</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/options.html">Options</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/authenticateUser.html">Authenticate</a></li>
+                </ul>
+            </nav>
+
+
+<!-- <SESSION1> region for session information .................................................................... -->
+
+            <aside id="SESSION1">
+                    <h3 id=SESSION1H3>Current Session</h3>
+                    <p id="SESSION1PARA">
+                    </p>
+            </aside>
+
+<!-- <MAIN> region for main content and background image .......................................................... -->
+
+            <main id="MAIN1">
+
+                <div id="heading-div">
+                    <h2>Contents</h2>
+                    <p>A collection of miscellaneous items</p>
+                </div>
+
+            <div id="unsecured-div">
+                    <p>Authentication is required for this page (via: Home >> Utilities >> Authenticate)</p>
+            </div>
+
+            <div id="secured-div">
+                <div id="projectslist-div">
+                    <h3>Projects:</h3>
+                    <ol>
+                        <li><a href="http://www.risingfast.com/mcaListPeople.html"> Ancestry</a></li>
+                        <li><a href="http://www.risingfast.com/bookInquiry.html"> Library</a></li>
+                        <li><a href="http://www.risingfast.com/cheatsheets.html"> Cheatsheets</a></li>
+                    </ol>
+                </div>
+
+                <div id="gameslist-div">
+                    <h3>Games:</h3>
+                    <ol>
+                        <li><a href="http://www.risingfast.com/guessAnIdiom.html"> Guess an Idiom</a></li>
+                        <li><a href="http://www.risingfast.com/battleShips.html"> Battleships</a></li>
+                        <li><a href="http://www.risingfast.com/d_regexWords.html"> Crossword Helper</a></li>
+                   </ol>
+                </div>
+
+                <div id="utilitieslist-div">
+                    <h3>Utilities:</h3>
+                    <ol>
+                        <li><a href="http://www.risingfast.com/environment.html"> Environment</a></li>
+                        <li><a href="http://www.risingfast.com/serverProfile.html"> Server Profile</a></li>
+                        <li><a href="http://www.risingfast.com/authenticateUser.html"> Authenticate</a></li>
+                        <li><a href="http://www.risingfast.com/options.html"> Options</a></li>
+                        <li><a href="http://www.risingfast.com/about.html">About</a></li>
+                    </ol>
+                </div>
+
+                <div id="sandboxlist-div">
+                    <h3>Sandbox:</h3>
+                    <ol id="cgi">
+                        <li><a href="http://www.risingfast.com/simplest.html"> Text Fetcher</a></li>
+                        <li><a href="http://www.risingfast.com/helloWorld.html"> Hello World!</a></li>
+                        <li><a href="http://www.risingfast.com/tcount.html"> Counter</a></li>
+                        <li><a href="http://www.risingfast.com/multiply.html"> Multiplier</a></li>
+                        <li><a href="http://www.risingfast.com/collectText.html"> Collect Text</a></li>
+                        <li><a href="http://www.risingfast.com/d_ajaxFetch.html"> Ajax Fetch</a></li>
+                        <li><a href="http://www.risingfast.com/d_ajaxPost.html"> Post Text to Server</a></li>
+                        <li><a href="http://www.risingfast.com/d_template.html"> Template</a></li>
+                        <li><a href="http://www.risingfast.com/dogAPI.html"> Dog API</a></li>
+                        <li><a href="http://www.risingfast.com/email.html"> Email</a></li>
+                        <li><a href="http://www.risingfast.com/perlTest.html"> Perl Cookie Test</a></li>
+                    </ol>
+                </div>
+            </div>
+
+<!-- buttons to show and hide help and clear help and internals..................................................... -->
+
+                <div id="MOREBTTNS">
+                    <button onclick="fcShowHelp()">Help</button>
+                    <button onclick="fClearIndexFields()">Clear</button>
+                </div>
+
+<!-- help text controlled by button ................................................................................ -->
+
+                <div id="HELPDIV">
+                    <p>
+                    There is no help available for this page 'index.html'<br>
+                    </p>
+                </div>
+
+<!-- Internals Text ................................................................................................ -->
+
+                <div id="INTERNALS">
+                    <details id="internals-details">
+                        <SUMMARY>
+                            Internals
+                        </SUMMARY>
+                        <p>
+                            html file: /var/www.html/index.html<br>
+                            css file: /var/www/html/index.css<br>
+                            css file: /var/www/html/common.css<br>
+                            css file: /var/www/html/index.js<br>
+                            js file: /var/www/html/common.js<br>
+                            cgi directory: /usr/lib/cgi-bin/<br>
+                            corner image: /var/www/html/cornerImage.png<br>
+                            background image: /var/www/html/background.jpg<br>
+                            CGI source code: C<br>
+                        </p>
+                    </details>
+                </div>
+
+                <script src="index.js"></script>
+                <script src="common.js"></script>
+
+            </main>
+
+<!-- <ASIDE1> region for change log ................................................................................ -->
+
+            <aside id="ASIDE1">
+                    <h3 id=ASIDE1H3>Changes 2021-22</h3>
+                <ul ID="ASIDE1UL">
+                    <li class="ASIDE1LI">22-Jul: show session block</li>
+                    <li class="ASIDE1LI">22-Jul: add authenticate link</li>
+                    <li class="ASIDE1LI">16-Jul: move authenticate to utils</li>
+                    <li class="ASIDE1LI">02-Jul: add cookies to perl test</li>
+                    <li class="ASIDE1LI">02-Jul: add perlTest to sandbox</li>
+                    <li class="ASIDE1LI">02-Jul: add dog API to sandbox</li>
+                    <li class="ASIDE1LI">23-Jun: add options to footer</li>
+                    <li class="ASIDE1LI">18-Jun: add options utility</li>
+                    <li class="ASIDE1LI">31-May: add cornerimage rotation</li>
+                    <li class="ASIDE1LI">22-May: lowercase HTML tags</li>
+                    <li class="ASIDE1LI">16-May: add clear button</li>
+                    <li class="ASIDE1LI">16-May: change background image</li>
+                    <li class="ASIDE1LI">16-May: change subtitle</li>
+                    <li class="ASIDE1LI">14-May: set Ancestry link</li>
+                    <li class="ASIDE1LI">13-May: add about as a project</li>
+                    <li class="ASIDE1LI">13-May: streamline games entries</li>
+                    <li class="ASIDE1LI">13-May: change Drills to Sandbox</li>
+                    <li class="ASIDE1LI">10-May: move all styles to css</li>
+                    <li class="ASIDE1LI">10-May: remove old library pages</li>
+                    <li class="ASIDE1LI">15-Jan: move old books links</li>
+                    <li class="ASIDE1LI">03-Jan: add Author Values</li>
+                    <li class="ASIDE1LI">03-Jan: remove Book Updates</li>
+                    <li class="ASIDE1LI">01-Nov: add book inquiry link</li>
+                    <li class="ASIDE1LI">14-Oct: add cheat sheet link</li>
+                    <li class="ASIDE1LI">01-Oct: move ajaxPost to grid</li>
+                    <li class="ASIDE1LI">19-Sep: move simplest to html</li>
+                    <li class="ASIDE1LI">19-Sep: add Help buttojn</li>
+                    <li class="ASIDE1LI">19-Sep: add Internals</li>
+                    <li class="ASIDE1LI">18-Sep: sidebar heading margins</li>
+                    <li class="ASIDE1LI">18-Sep: main region layout change</li>
+                    <li class="ASIDE1LI">13-Sep: main background</li>
+                    <li class="ASIDE1LI">13-Sep: Segoe UI font</li>
+                    <li class="ASIDE1LI">12-Sep: grid layout</li>
+                    <li class="ASIDE1LI">10-Sep: ancestry backgound</li>
+                    <li class="ASIDE1LI">01-Sep: user/password acess</li>
+                    <li class="ASIDE1LI">15-Aug: ancestry link</li>
+                    <li class="ASIDE1LI">01-Aug: ancestry to mysql</li>
+                    <li class="ASIDE1LI">28-Jul: repo on Github</li>
+                </ul>
+            </aside>
+
+<!-- <ASIDE2> region for corner image .............................................................................. -->
+
+            <aside id="ASIDE2">
+                <div id="ASIDE2DIV">
+                     <img id="ASIDE2IMG" src="cornerImage.png" alt="No cornerImage.png available">
+                </div>
+            </aside>
+
+<!-- <ASIDE3> region for corner image caption ...................................................................... -->
+
+            <aside id="ASIDE3">
+                <div id="ASIDE3DIV">
+                    <p id="ASIDE3-PARA">
+                     Matilda Cook in Magpies uniform before her next netball game 2022 
+                    </p>
+                </div>
+            </aside>
+
+            <footer id="FOOTER1">
+                <div id="FOOTER1OPTIONS-DIV">
+                    Corner Image Behaviour: <label id="footeroptionscichoice"></label>;
+                    Background Image: <label id="footeroptionsbackgroundimage"></label>;
+                    Show Current User: <label id="footeroptionsshowuser"></label>;
+                    Show Access Log: <label id="footeroptionsshowlog"></label>
+                </div>
+                <div id="FOOTER1DIV">
+                    <p>&copy; 2020 www.risingfast.com ... /var/www/html/index.html</P>
+                </div>
+            </footer>
+        </div>
+    </DIV>
+</body>
+
+</html>
