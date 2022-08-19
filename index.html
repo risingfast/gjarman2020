@@ -10,7 +10,7 @@
     <meta name="keywords" content="html, css, cgi">
     <meta name="generator" content="vim">
     <meta name="author" content="risingfast">
-    <title>Index</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="common.css">
     <link rel="shortcut icon" href="letterRF.png" type="image/png">
@@ -43,6 +43,8 @@
 <!--    30-Sep-2021 - move helloWorld from cgi to html and grid                                                     -->
 <!--    30-Sep-2021 - move tcount from cgi to html and grid                                                         -->
 <!--    01-Oct-2021 - add a mail link in Drills                                                                     -->
+<!--    14-Aug-2021 - add long list links on left                                                                   -->
+
 <!--    14-Oct-2021 - add cheat sheets link to utilities                                                            -->
 <!--    01-Nov-2021 - add bookInquiry link to menu                                                                  -->
 <!--    03-Jan-2022 - removed Book Updates                                                                          -->
@@ -71,10 +73,12 @@
 <!--    16-Jul-2022 - move Authenticate to utilities section                                                        -->
 <!--    22-Jul-2022 - add Authenticate link                                                                         -->
 <!--    19-Jul-2022 - add session div and authentication link                                                       -->
+<!--    25-Jul-2022 - add anchor to authentication warning                                                          -->
+<!--    11-Aug-2022 - add DOM Manipulation to the sandox list                                                       -->
 <!--                                                                                                                -->
 <!-- <BODY> region for all content including header and footer .................................................... -->
 
-<body onload="fcSetCornerImage(), fcSetFooterOptions(), fcCheckAthentication()">
+<body onload="fcSetCornerImage(), fcSetFooterOptions(), fcCheckAuthentication()">
     <div id="WRAPPER1">
         <div id="WRAPPER2">
             <header id="HEADER1">
@@ -87,15 +91,39 @@
                     <h3 id="NAV1H3">Links</h3>
                 <ul ID="NAV1UL">
                     <li class="NAV1LI"><a class="active" href="http://www.risingfast.com">Home</a></li>
-                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_ajaxFetch.html">Latest</a></li>
-                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_template.html">Template</a></li>
-                    <li class="NAV1LI"><a href="http://www.risingfast.com/email.html">Email</a></li>
-                    <li class="NAV1LI"><a href="http://www.risingfast.com/about.html">About</a></li>
-                    <li class="NAV1LI"><a href="http://www.risingfast.com/options.html">Options</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/mcaListPeople.html">Ancestry</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/bookInquiry.html">Library</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/cheatsheets.html">Cheatsheets</a></li>
                     <li class="NAV1LI"><a href="http://www.risingfast.com/authenticateUser.html">Authenticate</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/options.html">Options</a></li>
+                </ul>
+                <ul id="NAV1UL2" hidden>
+                    <li class="NAV1LI"><a class="active" href="http://www.risingfast.com">Home</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/mcaListPeople.html">Ancestry</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/bookInquiry.html">Library</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/cheatsheets.html">Cheatsheets</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/guessAnIdiom.html">Guess an Idiom</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/battleShips.html">Battleships</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_regexWords.html">Crossword Helper</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/environment.html">Environment</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/serverProfile.html">Server Profile</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/authenticateUser.html">Authenticate</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/options.html">Options</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/about.html">About</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/simplest.html">Text Fetcher</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/helloWorld.html">Hello World!</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/tcount.html">Counter</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/multiply.html">Multiplier</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/collectText.html">Collect Text</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_ajaxFetch.html">Ajax Fetch</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_ajaxPost.html">Post Text to Server</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/d_template.html">Template</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/dogAPI.html">Dog API</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/email.html">Email</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/perlTest.html">Cookies</a></li>
+                    <li class="NAV1LI"><a href="http://www.risingfast.com/DOM_Drills.html">DOM Drills</a></li>
                 </ul>
             </nav>
-
 
 <!-- <SESSION1> region for session information .................................................................... -->
 
@@ -115,7 +143,7 @@
                 </div>
 
             <div id="unsecured-div">
-                    <p>Authentication is required for this page (via: Home >> Utilities >> Authenticate)</p>
+                    <p><a href="http://www.risingfast.com/authenticateUser.html">Authentication</a> is required for this page (or via: Links >> Authenticate)</p>
             </div>
 
             <div id="secured-div">
@@ -161,7 +189,8 @@
                         <li><a href="http://www.risingfast.com/d_template.html"> Template</a></li>
                         <li><a href="http://www.risingfast.com/dogAPI.html"> Dog API</a></li>
                         <li><a href="http://www.risingfast.com/email.html"> Email</a></li>
-                        <li><a href="http://www.risingfast.com/perlTest.html"> Perl Cookie Test</a></li>
+                        <li><a href="http://www.risingfast.com/perlTest.html"> Cookies</a></li>
+                        <li><a href="http://www.risingfast.com/DOM_Drills.html"> DOM Drills</a></li>
                     </ol>
                 </div>
             </div>
@@ -212,6 +241,8 @@
             <aside id="ASIDE1">
                     <h3 id=ASIDE1H3>Changes 2021-22</h3>
                 <ul ID="ASIDE1UL">
+                    <li class="ASIDE1LI">11-Aug: add DOM drills to sandbox</li>
+                    <li class="ASIDE1LI">25-Jul: add authentication anchor</li>
                     <li class="ASIDE1LI">22-Jul: show session block</li>
                     <li class="ASIDE1LI">22-Jul: add authenticate link</li>
                     <li class="ASIDE1LI">16-Jul: move authenticate to utils</li>
@@ -276,7 +307,8 @@
                     Corner Image Behaviour: <label id="footeroptionscichoice"></label>;
                     Background Image: <label id="footeroptionsbackgroundimage"></label>;
                     Show Current User: <label id="footeroptionsshowuser"></label>;
-                    Show Access Log: <label id="footeroptionsshowlog"></label>
+                    Show Access Log: <label id="footeroptionsshowlog"></label>;
+                    Left Links: <label id="footeroptionsleftlinks"></label>;
                 </div>
                 <div id="FOOTER1DIV">
                     <p>&copy; 2020 www.risingfast.com ... /var/www/html/index.html</P>
