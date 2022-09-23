@@ -12,15 +12,16 @@
 //    27-Jun-2022 flag and comment deprepecated functions
 //    27-Jun-2022 remove deprepecated functions
 //    21-Jul-2022 add fcCheckAuthentication
+//    16-Sep-2022 change www.risingfast.com to gjarman2020.com
 
 // define uri's for cgi database fetches
 
-const uri101 = "http://www.risingfast.com/cgi-bin/setCornerImage.cgi";           // fetch list of images
-const uri102 = "http://www.risingfast.com/cgi-bin/utilitiesFetchOptions.cgi";
-const uri105 = "http://www.risingfast.com/cgi-bin/utilitiesFetchOptions.cgi";
-const uri106 = "http://www.risingfast.com/cgi-bin/saveCornerImageNumber.cgi";
-const uri107 = "http://www.risingfast.com/cgi-bin/fetchCornerImageNumber.cgi";
-const uri108 = "http://www.risingfast.com/cgi-bin/checkAuthentication.cgi";
+const uri101 = "http://gjarman2020.com/cgi-bin/setCornerImage.cgi";           // fetch list of images
+const uri102 = "http://gjarman2020.com/cgi-bin/utilitiesFetchOptions.cgi";
+const uri105 = "http://gjarman2020.com/cgi-bin/utilitiesFetchOptions.cgi";
+const uri106 = "http://gjarman2020.com/cgi-bin/saveCornerImageNumber.cgi";
+const uri107 = "http://gjarman2020.com/cgi-bin/fetchCornerImageNumber.cgi";
+const uri108 = "http://gjarman2020.com/cgi-bin/checkAuthentication.cgi";
 
 // function to display and hide help
   
