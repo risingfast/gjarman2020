@@ -193,8 +193,8 @@ async function fcSetFooterOptions() {
     document.getElementById("footeroptionscichoice").innerHTML = options[0][2];
     document.getElementById("footeroptionsbackgroundimage").innerHTML = options[1][2];
     document.getElementById("MAIN1").style.backgroundImage = "url(" + options[1][2].toString() + ".jpg)";
-    document.getElementById("footeroptionsshowserverlog").innerHTML = options[2][2];
-    document.getElementById("footeroptionsshowsession").innerHTML = options[3][2];
+    document.getElementById("footeroptionsshowuser").innerHTML = options[2][2];
+    document.getElementById("footeroptionsshowlog").innerHTML = options[3][2];
     document.getElementById("footeroptionsleftlinks").innerHTML = options[5][2];
     if (document.getElementById("footeroptionscichoice").innerHTML == "Locked") {
         ;
